@@ -1,0 +1,40 @@
+<!-- 
+
+<div class="container-panel">
+  <div class="card text-white bg-dark mb-3" style="width: 350px;">
+    <div class="card-header">
+      <h5>Backgrounds</h5>
+      <button class="btn btn-outline-info panel-add" type="button" (click)="dropToggle()">
+        <i class="fas fa-plus fa-sm"></i>
+      </button>
+      <button class="btn btn-outline-success panel-save" type="button">
+        <i class="far fa-save fa-2x"></i>
+      </button>
+    </div>
+    <div *ngIf="drop" class="drop-files bg-drop-zone">
+      <file-drop headertext="" (onFileDrop)="dropped($event)" (onFileOver)="fileOver($event)" (onFileLeave)="fileLeave($event)">
+        <span>
+              <label class="btn btn-outline-primary">
+                  ... <input type="file" style="display: none;" (change)="onFileChange($event)">
+              </label>
+        </span>
+      </file-drop>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let bg of backgrounds; let i = index;" class="list-group-item">
+        <div class="bg-config">
+          <img class="card-img" [ngClass]="{'bg-selected': bg.selected }" (click)="listClick($event, bg)" src="https://picsum.photos/10"
+            alt="IMG">
+          <span class="bg-nom">
+            <input type="text" class="form-control input-nom" [(ngModel)]="bg.nom">
+          </span>
+          <span></span>
+          <span class="del-bg">
+            <i class="fas fa-times"></i>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+ -->

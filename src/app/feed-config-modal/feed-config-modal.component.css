@@ -1,0 +1,29 @@
+.close {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .2s ease-in-out 0s;
+  transition: transform .2s ease-in-out 0s;
+}
+
+.close:hover {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.modal-footer, .table-feed td {
+  justify-content: center;
+  text-align: center;
+}
+
+.drag:hover {
+  color: rgb(14, 124, 208)
+}
+
+ /* .table-feed td .form-check-input {
+  text-align: right;
+} */
+
+.feed-body:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+

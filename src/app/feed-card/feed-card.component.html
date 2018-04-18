@@ -1,0 +1,22 @@
+<div class="container-card">
+  <div class="card ">
+    <h6 class="card-header">
+      <span *ngIf="feed.categories[0]" class="badge badge-primary">
+        [{{feed.categories[0]}}]</span>
+      {{feed.title}}</h6>
+    <div class="card-body">
+      <!-- <h6 class="card-title"> -->
+      <p class="card-text container-card-text alert alert-light">
+        {{feed.pubDate | dateTimeFormat}} </p>
+      <!-- <p class="card-text">{{feed.description | stripHtmlTags}}</p> -->
+      <app-feed-details-modal [feed]="feed"></app-feed-details-modal>
+      <a target="_blank" href="{{feed.link}}">
+        <button type="button" class="btn btn-outline-info">Lire la suite</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- {{feed.author}} -  -->

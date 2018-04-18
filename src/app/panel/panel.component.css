@@ -1,0 +1,86 @@
+:host {
+  /* background: #3a3a3e;
+    color: #fff; */
+  position: fixed;
+  left: auto;
+  /* top: 600px; */
+  right: 80px;
+  bottom: 0px;
+  /* width: 15%; */
+  min-width: 250px;
+  z-index: 9999;
+  height: 40%;
+  /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+  /* border-radius: 5px 0px 0px 5px; */
+  overflow-y: scroll;
+}
+
+ul {
+  font-size: 18px;
+  line-height: 3;
+  font-weight: 400;
+  /* padding-top: 50px; */
+  list-style: none;
+}
+
+.list-group-panel {
+  /* overflow-y: scroll; */
+}
+
+.container-panel .card {
+  /* text-align: center; */
+  /* width: 100%; */
+}
+
+.container-panel .card-img {
+  width: 25%;
+}
+
+.container-panel .card-header {
+  display: inline-flex;
+}
+
+.panel-add {
+  margin-left: 15px;
+}
+
+.panel-save {
+  margin-left: auto;
+}
+
+.bg-drop-zone {
+  width: 90%;
+  margin: 10px;
+}
+
+.bg-drop-zone:hover {
+  background-color: rgba(19, 121, 189, 0.277);
+  border-radius: 30px;
+}
+
+.bg-config {}
+
+.bg-config .del-bg {
+  margin-left: 20px;
+  color: rgb(172, 172, 172);
+}
+
+.bg-config .del-bg:hover {
+  color: red;
+}
+
+.bg-selected {
+  border: 4px solid rgb(81, 147, 223);
+}
+
+.input-nom {
+  width: 170px;
+  display: -webkit-inline-box;
+  margin-left: 10px;
+}
+
+.input-file {
+  opacity: 0;
+  /* position: absolute;
+  z-index: 0; */
+}

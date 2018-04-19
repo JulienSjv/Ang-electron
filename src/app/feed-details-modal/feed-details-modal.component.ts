@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, TemplateRef } from '@angular/core';
-//import { BsModalService } from 'ngx-bootstrap/modal';
-//import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+import { BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
 
 @Component({
@@ -24,12 +24,12 @@ export class FeedDetailsModalComponent {
 
   @Input() feed: any;
 
-  //modalRef: BsModalRef;
-  /* constructor(private modalService: BsModalService) {}
+  modalRef: BsModalRef;
+   constructor(private modalService: BsModalService) {}
  
   openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template);
-  } */
+  }
 
   // private getDismissReason(reason: any): string {
   //   if (reason === ModalDismissReasons.ESC) {

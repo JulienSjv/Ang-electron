@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, TemplateRef } from '@angular/core';
-//import { BsModalService } from 'ngx-bootstrap/modal';
-//import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+import { BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 import { FeedService } from '../services/feed.service';
 import {FormArray, FormControl} from '@angular/forms';
@@ -34,12 +34,12 @@ export class FeedConfigModalComponent {
 
   @Input() allFeedsEdit: any;
 
-  //modalRef: BsModalRef;
-  constructor(private feedService: FeedService) {}//, private modalService: BsModalService) { }
+  modalRef: BsModalRef;
+  constructor(private feedService: FeedService, private modalService: BsModalService) { }
 
-  /* openModal(template: TemplateRef<any>) {
+   openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template, { class: 'modal-lg' });
-  } */
+  } 
 
   saveFeed() {
     console.log(this.allFeedsEdit);

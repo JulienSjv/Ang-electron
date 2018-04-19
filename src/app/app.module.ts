@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { HttpModule } from '@angular/http';
 import {DndModule} from 'ng2-dnd';
 import { ColorPickerModule } from 'ngx-color-picker';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 import { NgxElectronModule } from 'ngx-electron';
@@ -76,6 +77,7 @@ import { TimeAgoPipe } from 'time-ago-pipe';
     HttpModule,
     NgxElectronModule,
     ColorPickerModule,
+    ModalModule.forRoot(),
     DndModule.forRoot()
   ],
   providers: [FeedService],
